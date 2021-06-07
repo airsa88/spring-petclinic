@@ -87,12 +87,6 @@ pipeline {
         }
       }
     }
-    stage('Integration Tests') {
-      steps {
-        echo "Running Integration tests..."
-        //sh "mvn verify -Pfailsafe"
-      }
-    }
     stage("Tag UAT") {
       steps {
         script {
